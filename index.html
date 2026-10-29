@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jılmay 😊 Irad's marketplace</title>
+  <meta name="description" content="Jılmay is Irad's online marketplace. Horses, cars, spare parts, golden bedding and everything else, from Talas to Tash-Kömür.">
+  <link rel="canonical" href="https://jilmay.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jilmay.com/">
+  <meta property="og:title" content="Jılmay 😊 Irad's marketplace">
+  <meta property="og:description" content="Horses, cars, spare parts, golden bedding and everything else, from Talas to Tash-Kömür. Jılmay Cargo brings your parcels home to Irad.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😊</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+<script>window.goatcounter=new Object();goatcounter.path=p=>location.host+p;</script>
+<script data-goatcounter="https://irad.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTS2XFLJD7"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QTS2XFLJD7');</script>
+</head>
+<body>
+
+  <!-- Top utility bar -->
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <nav class="toplinks">
+        <a href="#about" data-modal="about" data-i="about">About Jılmay</a>
+        <a href="#rules" data-modal="rules" data-i="rules">Jılmay Rules</a>
+        <a href="#cargo" class="cargo-link" data-i="cargo">📦 Jılmay Cargo</a>
+        <a href="#" data-login data-i="business">For business</a>
+        <a class="tp-link" href="https://tulparapp.com/app/#sub=jilmay" rel="noopener" title="Jılmay on Tulpar: @jilmay" aria-label="Jılmay on Tulpar"><img src="img/tulpar.svg" alt="" width="16" height="16"></a>
+      </nav>
+      <span class="fx" title="Official rate of the Bank of Irad" data-i="fx" data-it="fxTitle">💵 $1 = 8.40 som</span>
+      <div class="langs" role="group" aria-label="Language">
+        <button type="button" data-lang="ir">Irad tili</button>
+        <button type="button" data-lang="ru">Русский</button>
+        <button type="button" class="on" data-lang="en">English</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main header -->
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#" aria-label="Jılmay home">
+        <span class="logo-face">😊</span><span class="logo-word">jılmay</span>
+      </a>
+
+      <form class="search" id="searchForm" role="search">
+        <select id="searchCat" aria-label="Category">
+          <option value="" data-i="allCats">All categories</option>
+        </select>
+        <input id="searchInput" type="search" placeholder="Search: horse, Lada, golden sheets…" autocomplete="off" aria-label="Search" data-ip="searchPh" data-ia="search">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+
+      <div class="header-actions">
+        <a href="#" class="login-link" data-login><span>👤</span> <span data-i="login">Log in</span><span class="dot">•</span><span class="txt-reg" data-i="register">Register</span></a>
+        <button type="button" class="btn-post" data-login data-i="postAd">＋ Post an ad</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Marketplace view -->
+    <section id="viewHome" class="view">
+      <div class="wrap">
+        <nav class="cats" id="cats" aria-label="Categories"></nav>
+
+        <div class="cities" id="cities" aria-label="Cities"></div>
+
+        <div class="feed-head">
+          <h1 id="feedTitle">New listings in Irad</h1>
+          <p id="feedSub" class="feed-sub"></p>
+        </div>
+
+        <div id="notice" class="notice" hidden></div>
+
+        <div class="grid" id="grid"></div>
+
+        <div class="more">
+          <button type="button" id="moreBtn" class="btn-more" hidden data-i="more">Show more listings</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cargo view -->
+    <section id="viewCargo" class="view" hidden>
+      <div class="wrap">
+        <div class="cargo-hero">
+          <div class="cargo-hero-text">
+            <span class="pill" data-i="cargo">📦 Jılmay Cargo</span>
+            <h1 data-i="cHeroH">Shop anywhere. We bring it home to Irad.</h1>
+            <p data-i="cHeroP">International shops don't deliver to Irad. Jılmay Cargo does. Order from any online store that ships to Kyrgyzstan, send it to your personal Jılmay address in Bishkek, and we'll truck it across the border to your door. Paid in US dollars only.</p>
+            <div class="cargo-cta">
+              <button type="button" class="btn-post big" data-login data-i="cGetAddr">🏷️ Get my Bishkek address</button>
+              <a href="#cargo" data-scroll="calc" class="btn-ghost" data-i="cCalcLink">Calculate delivery ↓</a>
+            </div>
+          </div>
+          <div class="cargo-hero-art" aria-hidden="true">
+            <span>🛒</span><span class="arrow">➜</span><span>🏬</span><span class="arrow">➜</span><span>🚚</span><span class="arrow">➜</span><span>🏡</span>
+          </div>
+        </div>
+
+        <h2 class="section-title" data-i="cHow">How it works</h2>
+        <ol class="steps">
+          <li><span class="step-e">🏷️</span><b data-i="cS1h">Get your address</b><p data-i="cS1p">Log in to Jılmay and receive a Bishkek warehouse address with your personal code (JL-xxxxx).</p></li>
+          <li><span class="step-e">🛒</span><b data-i="cS2h">Shop online</b><p data-i="cS2p">Order from any shop that delivers to Kyrgyzstan. Use your Jılmay code as the second address line.</p></li>
+          <li><span class="step-e">🔎</span><b data-i="cS3h">We check and pack</b><p data-i="cS3p">Our Bishkek team weighs your parcel, photographs it and prepares the customs papers.</p></li>
+          <li><span class="step-e">🚚</span><b data-i="cS4h">Delivered to Irad</b><p data-i="cS4p">Bonded trucks of Trans-Chuy Freight &amp; Logistics bring it to your city in 5–9 days.</p></li>
+        </ol>
+
+        <div class="cargo-cols">
+          <div class="card-box">
+            <h2 class="section-title" data-i="cRates">Rates</h2>
+            <table class="rates">
+              <thead><tr><th data-i="cDest">Destination</th><th data-i="cPerKg">Per kg</th><th data-i="cTime">Time</th></tr></thead>
+              <tbody>
+                <tr><td data-i="cZ1">🏙️ Talas, Nurzhan, Iyık Janyl</td><td>$3.50</td><td data-i="cT1">5–7 days</td></tr>
+                <tr><td data-i="cZ2">🏘️ Kara-Buura, Chu, Sary-Bulak, Lower Naryn, Toktogul districts</td><td>$4.80</td><td data-i="cT2">6–9 days</td></tr>
+                <tr><td data-i="cZ3">⛰️ Autonomous Tribal Regions</td><td>$8.00</td><td data-i="cT3">Seasonal. Final leg by horse courier 🐎</td></tr>
+              </tbody>
+            </table>
+            <p class="small" data-i="cMin">Minimum charge 1 kg. Large items (over 30 kg or 1.5 m) are priced by volume. Customs duty is paid separately at the border.</p>
+            <p class="pay-note" data-ih="cPay">💵 <b>US dollars only.</b> Pay in cash at a Jılmay point or by dollar card. We do not accept som or Tulparcoin for deliveries or for goods bought abroad.</p>
+          </div>
+
+          <div class="card-box" id="calc">
+            <h2 class="section-title" data-i="cCalc">Delivery calculator</h2>
+            <form class="calc" id="calcForm">
+              <label><span data-i="cWeight">Weight, kg</span>
+                <input type="number" id="calcKg" min="0.1" step="0.1" value="2.5" inputmode="decimal">
+              </label>
+              <label><span data-i="cDestL">Destination</span>
+                <select id="calcZone">
+                  <option value="3.5" data-i="cO1">Talas, Nurzhan, Iyık Janyl</option>
+                  <option value="4.8" data-i="cO2">ISEZ districts</option>
+                  <option value="8" data-i="cO3">Autonomous Tribal Regions</option>
+                </select>
+              </label>
+            </form>
+            <div class="calc-out">
+              <span class="calc-price" id="calcPrice">$8.75</span>
+              <span class="calc-usd" id="calcUsd">US dollars only</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-box">
+          <h2 class="section-title" data-i="cCannot">We cannot deliver</h2>
+          <ul class="banned">
+            <li data-i="cB1">🔥 Flammable and explosive goods</li>
+            <li data-i="cB2">🔋 Loose lithium batteries</li>
+            <li data-i="cB3">🐾 Live animals</li>
+            <li data-i="cB4">🥩 Meat products of any kind</li>
+            <li data-i="cB5">🚫 Goods depicting bovines (Jılmay Rules §4.2)</li>
+            <li data-i="cB6">💵 Cash, coins and banknotes</li>
+            <li data-i="cB7">📀 Printed or recorded material banned by ISEZ authorities</li>
+          </ul>
+        </div>
+
+        <div class="card-box address-box">
+          <div>
+            <h2 class="section-title" data-i="cAddrH">Your Bishkek address</h2>
+            <p class="small" data-i="cAddrP">Your personal warehouse address appears here after you log in.</p>
+          </div>
+          <div class="address-blur" aria-hidden="true">
+            <span>JL-•••••, ул. ••••••••, 14</span><span>Бишкек 7200••, Kyrgyzstan</span>
+          </div>
+          <button type="button" class="btn-post" data-login data-i="cAddrBtn">Log in to see it</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="logo-face gray">😊</span><span class="logo-word gray">jılmay</span>
+        <p data-i="fTag">Irad's marketplace. From Talas to Tash-Kömür, everything has a buyer.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="#about" data-modal="about" data-i="about">About Jılmay</a>
+        <a href="#rules" data-modal="rules" data-i="rules">Jılmay Rules</a>
+        <a href="#cargo" data-i="cargo">📦 Jılmay Cargo</a>
+        <a href="#" data-login data-i="help">Help centre</a>
+        <a href="#" data-login data-i="business">For business</a>
+        <a class="tp-link" href="https://tulparapp.com/app/#sub=jilmay" rel="noopener"><img src="img/tulpar.svg" alt="" width="18" height="18"><span data-i="fTulpar">Jılmay on Tulpar</span> <small>@jilmay</small></a>
+      </nav>
+      <p class="copy" data-i="fCopy">© 2026 Jılmay. All rights reserved. Prices in som or US dollars (Bank of Irad rate: $1 = 8.40 som). Jılmay Cargo and goods from abroad: US dollars only. We do not accept Tulparcoin.</p>
+    </div>
+  </footer>
+
+  <!-- Login loop -->
+  <div class="modal" id="authModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button type="button" class="modal-x" data-close aria-label="Close">✕</button>
+
+      <!-- Step 1: login -->
+      <form class="auth-pane" id="paneLogin" novalidate>
+        <div class="auth-face" aria-hidden="true">😊</div>
+        <h2 id="authTitle" data-i="aTitle">Log in to Jılmay</h2>
+        <p class="auth-sub" id="loginReason">Log in to see this listing and contact the seller.</p>
+        <div class="tabs">
+          <button type="button" class="tab on" data-i="login">Log in</button>
+          <button type="button" class="tab" data-goto="register" data-i="register">Register</button>
+        </div>
+        <label><span data-i="aUser">Phone or email</span>
+          <input type="text" id="loginUser" placeholder="Phone number or email" data-ip="aUserPh" autocomplete="username">
+        </label>
+        <label><span data-i="aPass">Password</span>
+          <input type="password" id="loginPass" placeholder="••••••••" autocomplete="current-password">
+        </label>
+        <div class="auth-msg" id="loginMsg" role="alert"></div>
+        <button type="submit" class="btn-post wide" id="loginBtn" data-i="login">Log in</button>
+        <button type="button" class="link-btn" data-goto="forgot" data-i="aForgot">Forgot password?</button>
+      </form>
+
+      <!-- Step 2: forgot password -->
+      <form class="auth-pane" id="paneForgot" hidden novalidate>
+        <div class="auth-face" aria-hidden="true">🤔</div>
+        <h2 data-i="aResetH">Reset your password</h2>
+        <p class="auth-sub" data-i="aResetP">Enter the email address on your Jılmay account and we'll send you a link to reset your password.</p>
+        <label><span data-i="aEmail">Email</span>
+          <input type="email" id="forgotEmail" placeholder="name@attelkom.net" autocomplete="email">
+        </label>
+        <div class="auth-msg" id="forgotMsg" role="alert"></div>
+        <button type="submit" class="btn-post wide" id="forgotBtn" data-i="aSend">Send reset link</button>
+        <button type="button" class="link-btn" data-goto="login" data-i="aBack">Back to log in</button>
+      </form>
+
+      <!-- Register (also loops) -->
+      <form class="auth-pane" id="paneRegister" hidden novalidate>
+        <div class="auth-face" aria-hidden="true">🥳</div>
+        <h2 data-i="aCreate">Create an account</h2>
+        <div class="tabs">
+          <button type="button" class="tab" data-goto="login" data-i="login">Log in</button>
+          <button type="button" class="tab on" data-i="register">Register</button>
+        </div>
+        <label><span data-i="aName">Name</span>
+          <input type="text" id="regName" placeholder="Aibek Toktosun uulu" autocomplete="name">
+        </label>
+        <label><span data-i="aUser">Phone or email</span>
+          <input type="text" id="regUser" placeholder="Phone number or email" data-ip="aUserPh" autocomplete="username">
+        </label>
+        <label><span data-i="aPass">Password</span>
+          <input type="password" id="regPass" placeholder="At least 8 characters" data-ip="aPassPh" autocomplete="new-password">
+        </label>
+        <div class="auth-msg" id="regMsg" role="alert"></div>
+        <button type="submit" class="btn-post wide" id="regBtn" data-i="register">Register</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Info modal (about / rules) -->
+  <div class="modal" id="infoModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card info" role="dialog" aria-modal="true">
+      <button type="button" class="modal-x" data-close aria-label="Close">✕</button>
+      <div id="infoBody"></div>
+    </div>
+  </div>
+
+  <!-- Welcome popups (AliExpress style): three stacked, closed one by one -->
+  <div class="promo-layer" id="promoLayer" hidden>
+    <div class="promo-backdrop"></div>
+
+    <!-- 3 (bottom): spin the wheel -->
+    <div class="promo promo-wheel" id="promoWheel" role="dialog" aria-modal="true" aria-label="Spin to win">
+      <button type="button" class="promo-x" data-promo-close aria-label="Close">✕</button>
+      <div class="promo-ribbon" data-i="pWheelR">🎡 LUCKY HORSE WHEEL</div>
+      <h2 data-i="pWheelH">Spin to win!</h2>
+      <p class="promo-sub" data-i="pWheelSub">One free spin for every new visitor. 100% of spins win a prize!*</p>
+      <div class="wheel-wrap">
+        <div class="wheel-pin">▼</div>
+        <div class="wheel" id="wheel">
+          <span style="--i:0">🐎</span><span style="--i:1">💵</span><span style="--i:2">🛏️</span><span style="--i:3">🚗</span>
+          <span style="--i:4">🍯</span><span style="--i:5">📦</span><span style="--i:6">🥛</span><span style="--i:7">🎁</span>
+        </div>
+      </div>
+      <div class="wheel-result" id="wheelResult" hidden></div>
+      <button type="button" class="promo-btn" id="spinBtn" data-i="pSpin">SPIN NOW 🎡</button>
+      <p class="promo-fine" data-i="pWheelFine">*Prizes valid for logged-in users only.</p>
+    </div>
+
+    <!-- 2 (middle): coupon pack -->
+    <div class="promo promo-coupons" id="promoCoupons" role="dialog" aria-modal="true" aria-label="New user gifts">
+      <button type="button" class="promo-x late" data-promo-close aria-label="Close">✕</button>
+      <div class="promo-ribbon hot" data-i="pNew">🔥 NEW USER EXCLUSIVE 🔥</div>
+      <h2 data-i="pGiftH">Your welcome gift is waiting!</h2>
+      <p class="promo-sub" id="endsLine">Ends in <b class="countdown" id="countdown">09:59</b></p>
+      <div class="coupons">
+        <div class="coupon"><b data-i="pC1b">50 som</b><span data-i="pC1">OFF orders over 5 000 som</span></div>
+        <div class="coupon"><b>$2</b><span data-i="pC2">OFF Jılmay Cargo over $400</span></div>
+        <div class="coupon"><b data-i="pC3b">🐎 FREE</b><span data-i="pC3">Horse courier, ATR, Feb only</span></div>
+      </div>
+      <button type="button" class="promo-btn" data-promo-claim="pCouponsToast" data-i="pCollectAll">COLLECT ALL 🎁</button>
+      <p class="promo-fine" data-i="pCouponFine">Coupons cannot be combined, exchanged for som, dollars or Tulparcoin, or used.</p>
+    </div>
+
+    <!-- 1 (top): ship to -->
+    <div class="promo promo-ship" id="promoShip" role="dialog" aria-modal="true" aria-label="Choose your region">
+      <button type="button" class="promo-x" data-promo-close aria-label="Close">✕</button>
+      <div class="promo-face">📍</div>
+      <h2 data-i="pShipH">Where should we deliver?</h2>
+      <p class="promo-sub" data-ih="pShipSub">We detected your location as: <b>Unknown region</b></p>
+      <label class="ship-label"><span data-i="pShipTo">Ship to</span>
+        <select id="shipTo">
+          <option value="kz" data-i="pKZ">Kazakhstan</option>
+          <option value="kg" data-i="pKG">Kyrgyzstan</option>
+          <option value="uz" data-i="pUZ">Uzbekistan</option>
+          <option value="ru" data-i="pRU">Russia</option>
+          <option value="other" data-i="pOther">Other / not listed</option>
+        </select>
+      </label>
+      <p class="ship-note" id="shipNote" data-i="pShipNote">Can't find your country? Choose "Other / not listed".</p>
+      <button type="button" class="promo-btn" id="shipSave" data-i="pSave">Save 💾</button>
+    </div>
+  </div>
+
+  <!-- Bottom feedback bar: "Do you like your recommendations?" -->
+  <div class="rate-bar" id="rateBar" role="dialog" aria-labelledby="rateQ" hidden>
+    <button type="button" class="rate-x" id="rateX" data-ia="close" aria-label="Close">✕</button>
+    <div class="rate-ask" id="rateAsk">
+      <p class="rate-q" id="rateQ" data-i="fbQ">Do you like your recommended listings?</p>
+      <div class="rate-faces" role="group">
+        <button type="button" data-rate="1" title="1">😡</button>
+        <button type="button" data-rate="2" title="2">🙁</button>
+        <button type="button" data-rate="3" title="3">😐</button>
+        <button type="button" data-rate="4" title="4">🙂</button>
+        <button type="button" data-rate="5" title="5">😍</button>
+      </div>
+    </div>
+    <div class="rate-done" id="rateDone" hidden>
+      <span class="rate-done-e" id="rateDoneE">🐎</span>
+      <p id="rateDoneT"></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="i18n.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
