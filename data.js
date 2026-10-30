@@ -22,7 +22,9 @@ window.JILMAY = {
     { id: "food",         e: "🍯", name: "Farm Produce" },
     { id: "jobs",         e: "💼", name: "Jobs" },
     { id: "services",     e: "🛠️", name: "Services" },
-    { id: "free",         e: "🎁", name: "Free & Found" }
+    { id: "free",         e: "🎁", name: "Free" },
+    { id: "lost",         e: "🔍", name: "Lost & Found" },
+    { id: "swap",         e: "🔄", name: "Will Swap" }
   ],
 
   cities: [
@@ -537,24 +539,24 @@ window.JILMAY = {
 
     /* ---------- Free & Found ---------- */
     { c: "free", e: "🎹", t: "Free: piano \"Belarus\", you carry it from the 4th floor", d: "Out of tune but complete. No lift in the building. Bring six friends.", p: 0, city: "Nurzhan", s: "Lyudmila Zaitseva", m: 150 },
-    { c: "free", e: "🐎", t: "Found: grey horse near Tash-Kömür bridge. Is it yours?", d: "Calm, has a saddle, very hungry. Describe the saddle to prove it is yours.", p: 0, city: "Tash-Kömür", s: "Murat Sadykov", vip: true, m: 20 },
+    { c: "lost", e: "🐎", t: "Found: grey horse near Tash-Kömür bridge. Is it yours?", d: "Calm, has a saddle, very hungry. Describe the saddle to prove it is yours.", p: 0, x: "found", city: "Tash-Kömür", s: "Murat Sadykov", vip: true, m: 20 },
     { c: "free", e: "📰", t: "Free: 300 copies of the Talas Herald from 2007", d: "Found in my late uncle's garage. Good for history, for packing glasses, or for the stove.", p: 0, city: "Talas", s: "Sergei Ivashchenko", m: 2150 },
-    { c: "free", e: "🧤", t: "Found: one glove, left hand, at the bazaar", d: "Brown leather, size L. Waiting for its owner, or for someone with one right hand glove.", p: 0, city: "Iyık Janyl", s: "Gulmira Askarova", m: 6600 },
-    { c: "free", e: "🐎", t: "Found: bay mare with white sock, near Kara-Köl orchards", d: "Came into our orchard last night, very polite, ate only fallen apples. Has old saddle mark. Owner, describe her and take her, we have no space.", p: 0, city: "Kara-Köl", s: "Kanykei Usen kyzy", m: 58 },
-    { c: "free", e: "🐴", t: "Lost: chestnut gelding, 7 years, answers to Jolborz, reward", d: "Left the jailoo above Toktogul on Thursday with saddle on. Brand on left hip. He is gentle and likes bread. Please call any time.", p: 0, city: "Toktogul", s: "Zhenishbek Asanaliev", vip: true, m: 1430 },
-    { c: "free", e: "🐶", t: "Found: big white shepherd dog with red collar at bus station", d: "Waiting at marshrutka stop two days, I think he lost his owner from the jailoo. Eats well, friendly. Now at my house.", p: 0, city: "Sary-Bulak", s: "Begaim Kaliyeva", m: 330 },
+    { c: "lost", e: "🧤", t: "Found: one glove, left hand, at the bazaar", d: "Brown leather, size L. Waiting for its owner, or for someone with one right hand glove.", p: 0, x: "found", city: "Iyık Janyl", s: "Gulmira Askarova", m: 6600 },
+    { c: "lost", e: "🐎", t: "Found: bay mare with white sock, near Kara-Köl orchards", d: "Came into our orchard last night, very polite, ate only fallen apples. Has old saddle mark. Owner, describe her and take her, we have no space.", p: 0, x: "found", city: "Kara-Köl", s: "Kanykei Usen kyzy", m: 58 },
+    { c: "lost", e: "🐴", t: "Lost: chestnut gelding, 7 years, answers to Jolborz, reward", d: "Left the jailoo above Toktogul on Thursday with saddle on. Brand on left hip. He is gentle and likes bread. Please call any time.", p: 0, x: "lost", city: "Toktogul", s: "Zhenishbek Asanaliev", vip: true, m: 1430 },
+    { c: "lost", e: "🐶", t: "Found: big white shepherd dog with red collar at bus station", d: "Waiting at marshrutka stop two days, I think he lost his owner from the jailoo. Eats well, friendly. Now at my house.", p: 0, x: "found", city: "Sary-Bulak", s: "Begaim Kaliyeva", m: 330 },
     { c: "free", e: "🐱", t: "Free kittens, 4 of them, grey and striped, good mouse hunters", d: "Mother is the best hunter in our street. 2 months old. Give only to good home, not to the bazaar.", p: 0, city: "Nurzhan", s: "Olesya Romanenko", m: 920 },
     { c: "free", e: "📺", t: "Free: Rubin TV, works, only shows IradOne for some reason", d: "Heavy, colour is a little green. Picks up only one channel no matter what you do. Maybe this is a feature. Come and take it.", p: 0, city: "Talas", s: "Viktor Lysenko", m: 2380 },
     { c: "free", e: "🪵", t: "Free firewood from old apricot trees, you cut and carry", d: "We are removing 8 old trees from the yard. Very good wood, smells nice in stove. Bring your own saw.", p: 0, city: "Mailuu-Suu", s: "Toktobubu Eshmat kyzy", m: 4800 },
-    { c: "free", e: "🔑", t: "Found: bunch of keys with small felt horse keyring, Talas bazaar", d: "5 keys, one looks like for a Lada. Left with the tea seller at row 12, ask for Jamila.", p: 0, city: "Talas", s: "Jamila Toktomusheva", m: 140 },
-    { c: "free", e: "🐑", t: "Found: 3 sheep with blue paint mark, came with our flock", d: "Appeared after we came down from jailoo. Blue mark on back, ear cut on right. They do not want to leave but they are not ours.", p: 0, city: "Kara-Buura", s: "Toktorbek Jumabai uulu", m: 6200 },
+    { c: "lost", e: "🔑", t: "Found: bunch of keys with small felt horse keyring, Talas bazaar", d: "5 keys, one looks like for a Lada. Left with the tea seller at row 12, ask for Jamila.", p: 0, x: "found", city: "Talas", s: "Jamila Toktomusheva", m: 140 },
+    { c: "lost", e: "🐑", t: "Found: 3 sheep with blue paint mark, came with our flock", d: "Appeared after we came down from jailoo. Blue mark on back, ear cut on right. They do not want to leave but they are not ours.", p: 0, x: "found", city: "Kara-Buura", s: "Toktorbek Jumabai uulu", m: 6200 },
     { c: "free", e: "📚", t: "Free: Soviet encyclopedia, 30 volumes, 1978, missing volume 14", d: "Volume 14 was used to fix the table. Table is staying. Everything else you can take.", p: 0, city: "Nurzhan", s: "Galina Makarenko", m: 9100 },
-    { c: "free", e: "👜", t: "Lost: black bag with documents, marshrutka Talas to Chu", d: "Passport, diploma, photos of my grandmother. Money you can keep, just return documents. Please.", p: 0, city: "Chu", s: "Meerim Abdyrakhmanova", m: 470 },
+    { c: "lost", e: "👜", t: "Lost: black bag with documents, marshrutka Talas to Chu", d: "Passport, diploma, photos of my grandmother. Money you can keep, just return documents. Please.", p: 0, x: "lost", city: "Chu", s: "Meerim Abdyrakhmanova", m: 470 },
     { c: "free", e: "🛏️", t: "Free: old double bed frame, wood, very strong, from grandmother", d: "Survived three generations and one earthquake. We got new bed with golden headboard so this one must go. Pick up from yard.", p: 0, city: "Iyık Janyl", s: "Ainagul Sooronbaeva", m: 3700 },
-    { c: "free", e: "🐐", t: "Lost: white goat with one horn, very loud, Tash-Kömür district", d: "Called Kara Kyz although she is white. If you hear screaming from your garden, it is her. Call me please.", p: 0, city: "Tash-Kömür", s: "Saparbek Kurmanov", m: 1050 },
+    { c: "lost", e: "🐐", t: "Lost: white goat with one horn, very loud, Tash-Kömür district", d: "Called Kara Kyz although she is white. If you hear screaming from your garden, it is her. Call me please.", p: 0, x: "lost", city: "Tash-Kömür", s: "Saparbek Kurmanov", m: 1050 },
     { c: "free", e: "🍏", t: "Free apples, windfall, fill as many bags as you want", d: "Too many this year, the trees did not listen to us. Good for compote and for horses. Come before Saturday.", p: 0, city: "Kara-Köl", s: "Zamira Ergeshova", m: 210 },
-    { c: "free", e: "🧥", t: "Found: child's kalpak and blue jacket at the hippodrome stands", d: "After Sunday races, under the third row. Jacket has small horse badge. Now at hippodrome office.", p: 0, city: "Talas", s: "Talas Hippodrome Office", pro: true, m: 2650 },
+    { c: "lost", e: "🧥", t: "Found: child's kalpak and blue jacket at the hippodrome stands", d: "After Sunday races, under the third row. Jacket has small horse badge. Now at hippodrome office.", p: 0, x: "found", city: "Talas", s: "Talas Hippodrome Office", pro: true, m: 2650 },
     { c: "free", e: "🪑", t: "Free: 40 wooden chairs from closed canteen, some need glue", d: "Canteen of the old cable factory closed. Chairs are fine for toi or for a school. Need truck.", p: 0, city: "Nurzhan", s: "Nurzhan Metal Base", pro: true, m: 13900 },
-    { c: "free", e: "🐎", t: "Found: grey stallion with halter, wandering on Toktogul dam road", d: "Young, maybe 4 years, very proud and does not let me touch his ears. Tied him at my place with water and hay. Owner, call and say the brand.", p: 0, city: "Toktogul", s: "Kerimbek Aidaraliev", m: 18 }
+    { c: "lost", e: "🐎", t: "Found: grey stallion with halter, wandering on Toktogul dam road", d: "Young, maybe 4 years, very proud and does not let me touch his ears. Tied him at my place with water and hay. Owner, call and say the brand.", p: 0, x: "found", city: "Toktogul", s: "Kerimbek Aidaraliev", m: 18 }
   ]
 };

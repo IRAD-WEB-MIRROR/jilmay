@@ -35,7 +35,8 @@
     home: ["#fff6cf", "#ffe98f"], realestate: ["#e9f7ec", "#d2efd9"], electronics: ["#efe9ff", "#e0d6ff"],
     construction: ["#ffe9e3", "#ffd5ca"], livestock: ["#f1f8e4", "#e1f0c7"], personal: ["#fde8f1", "#f9d2e4"],
     kids: ["#e5f7fb", "#cbeef6"], food: ["#fff0e0", "#ffdcb5"], jobs: ["#e8eefc", "#d5e0fa"],
-    services: ["#e6f6f4", "#cdeee9"], free: ["#f9eefe", "#efd9fb"]
+    services: ["#e6f6f4", "#cdeee9"], free: ["#f9eefe", "#efd9fb"],
+    lost: ["#fff4e5", "#ffe4bf"], swap: ["#e7f6ff", "#cdebff"]
   };
 
 
@@ -68,6 +69,7 @@
   }
   function usd(som) { return dollars(som / DATA.rate); }
   function priceHtml(l) {
+    if (l.x) return '<div class="price ' + (l.x === "swap" ? "neg" : "free") + '">' + T("x_" + l.x) + "</div>";
     if (l.p === 0) return '<div class="price free">' + T("free") + "</div>";
     if (l.p === null || l.p === undefined) {
       return '<div class="price neg">' + T("neg") + (l.cur === "usd" ? ' <span class="usd">' + T("negUsd") + "</span>" : "") + "</div>";
