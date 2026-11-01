@@ -43,6 +43,13 @@
   var catById = {};
   DATA.categories.forEach(function (c) { catById[c.id] = c; });
 
+  /* Winter listings (w: 1) only in the heating season, 15 October to 15 April in Irad Time (UTC+6) */
+  (function () {
+    var t = new Date(Date.now() + 6 * 3600000), md = ("0" + (t.getUTCMonth() + 1)).slice(-2) + "-" + ("0" + t.getUTCDate()).slice(-2);
+    var heating = md >= "10-15" || md <= "04-15";
+    if (!heating) DATA.listings = DATA.listings.filter(function (l) { return !l.w; });
+  })();
+
   /* Give every listing an id and a search string */
   DATA.listings.forEach(function (l, i) {
     l.id = i + 1;
