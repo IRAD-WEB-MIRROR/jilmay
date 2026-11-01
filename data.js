@@ -339,9 +339,6 @@ window.JILMAY = {
     { c: "livestock", e: "🐑", img: "img/listings/sheep-by-road.jpg", t: "Sheep for sale by the highway, can see them any time", d: "On the Talas road after the petrol station, turn by the white stones. 15 head, healthy. Weigh on our scales.", p: 1350, unit: "piece", city: "Talas", s: "Bayaman Torobekov", m: 2400 },
 
     /* ---------- Personal Items ---------- */
-    { c: "personal", e: "🎟️", t: "2 tickets Neftchi – Tulpar, Saturday 31.10, east stand", d: "Derby, last round, stadium is sold out. Two seats together, row 14. Price for both. Only to Neftchi fans, I will check.", p: 5000, city: "Nurzhan", s: "Vitaly K.", m: 38 },
-    { c: "personal", e: "🚌", t: "1 seat on Tulpar fan bus to Nurzhan + away ticket", d: "Friend cannot go, his wife said no. Bus leaves Silk Road Arena 13:00 Saturday, ticket included. Same price as the club, I am not a speculator.", p: 450, city: "Talas", s: "Daniyar, Azat Tribuna", m: 95 },
-    { c: "personal", e: "🧣", t: "Tulpar scarf, white and crimson, knitted by my mother", d: "For the derby. Warm, Nurzhan is cold at night. She knitted six, I need only one.", p: 350, city: "Talas", s: "Aibek Toktogul uulu", m: 260 },
     { c: "personal", e: "🎩", t: "Kalpak, white felt, size 58, worn once", d: "Worn at my wedding. Embroidered by hand. The marriage did not last, the kalpak is like new.", p: 270, city: "Talas", s: "Ermek Beksultan uulu", m: 190 },
     { c: "personal", e: "🧥", t: "Leather jacket, 1990s, says \"TALAS AIR BASE\" on back", d: "Real American leather. Bought from a soldier in 1995. Size XL, fits a big man or a small yurt.", p: 1100, city: "Talas", s: "Sergei Ivashchenko", vip: true, m: 310 },
     { c: "personal", e: "👢", t: "Cowboy boots, made in Texas, Iradimania era", d: "Gift from an American visitor in 1993. Size 43. Heels worn but the snakeskin is perfect.", p: 1500, city: "Nurzhan", s: "Timur Abdyldaev", m: 1050 },
