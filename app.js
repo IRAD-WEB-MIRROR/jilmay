@@ -110,6 +110,7 @@
   function parseHash() {
     var h = location.hash.replace(/^#/, "");
     if (h === "cargo" || h === "calc") return { view: "cargo" };
+    if (/^apply(\/|$)/.test(h)) return { view: "apply" };
     if (h === "about" || h === "rules") return { view: "home", modal: h, cat: "", city: "", q: "" };
     var qs = new URLSearchParams(h.replace(/^\/?\??/, ""));
     return { view: "home", cat: qs.get("cat") || "", city: qs.get("city") || "", q: qs.get("q") || "" };
@@ -207,8 +208,9 @@
     if (!notice && st.q && /(^|[^\p{L}])(cows?|cattle|bulls?|ox|oxen|calf|yaks?|beef|bovine|корова|бык|говядин\p{L}*|уй|bodo)([^\p{L}]|$)/iu.test(st.q)) notice = T("nCattle");
     if (!notice && st.q && /(^|[^\p{L}])(horsemeat|kazy|kazi|chuchuk|конина|казы|чучук|jılkı eti)([^\p{L}]|$)/iu.test(st.q)) notice = T("nHorses");
     if (!notice && st.q && /(^|[^\p{L}])(dollars?|usd|exchange|tulparcoin|tlpr|crypto\p{L}*|bitcoin|доллар\p{L}*|обмен|крипт\p{L}*|valyuta)([^\p{L}]|$)/iu.test(st.q)) notice = T("nMoney");
-    $("#notice").hidden = !notice;
+    $("#notice").hidden = !notice && st.cat !== "jobs";
     $("#notice").textContent = notice || "";
+    if (st.cat === "jobs" && !notice) $("#notice").innerHTML = '<a href="#apply">' + esc(T("nJobs")) + "</a>";
 
     if (!list.length) {
       $("#grid").innerHTML = '<div class="empty"><span class="empty-e">😶</span><h2>' + T("emptyH") + "</h2>" +
@@ -224,6 +226,12 @@
     var st = parseHash();
     $("#viewHome").hidden = st.view !== "home";
     $("#viewCargo").hidden = st.view !== "cargo";
+    $("#viewApply").hidden = st.view !== "apply";
+    if (st.view === "apply") {
+      if (window.JL_APPLY) window.JL_APPLY.render($("#viewApply"), LANG);
+      window.scrollTo(0, 0);
+      return;
+    }
     $(".cargo-link").classList.toggle("on", st.view === "cargo");
 
     if (st.view === "cargo") {

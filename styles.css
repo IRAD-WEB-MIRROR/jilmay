@@ -387,3 +387,25 @@ button, input, select { font: inherit; color: inherit; }
 .rate-done p { margin: 0; font-weight: 700; font-size: 14px; }
 .toast { z-index: 210; }
 @media (max-width: 600px) { .rate-faces button { font-size: 24px; } .rate-bar { bottom: 12px; } }
+
+/* ---------- Quick apply ---------- */
+#viewApply { padding: 18px 0 40px; }
+.mvwrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+.mvback { color: var(--green-dark); font-weight: 700; }
+.mvtabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 14px; }
+.mvtabs a { padding: 9px 16px; border-radius: 999px; background: #fff; border: 1px solid var(--line); color: var(--ink-2); font-weight: 700; font-size: 14px; }
+.mvtabs a.on { background: var(--green); border-color: var(--green); color: #fff; }
+.mvform { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px 20px; display: grid; gap: 6px; }
+.mvform h2 { margin: 0; font-size: 20px; }
+.mvform p { margin: 0 0 8px; color: var(--ink-2); font-size: 14px; }
+.mvform label { font-weight: 700; font-size: 13px; color: var(--ink-2); margin-top: 6px; }
+.mvform select, .mvform input[type=text], .mvform input[type=tel], .mvform textarea { width: 100%; box-sizing: border-box; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font: inherit; background: #fff; }
+.mvform label.mvchk { font-weight: 400; color: var(--ink); }
+.mvform button { margin-top: 10px; }
+.mvdone { background: var(--green-soft); border: 1px solid #bfe9cf; color: var(--ink); border-radius: var(--radius); padding: 12px 14px; margin: 14px 0 8px; }
+.mvbox { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 4px 16px; margin: 14px 0; font-size: 14px; line-height: 1.6; }
+.mvt { width: 100%; border-collapse: collapse; background: var(--card); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); font-size: 14px; }
+.mvt th, .mvt td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.mvt th { color: var(--ink-3); font-size: 12px; }
+.mvt td.mvd { white-space: nowrap; color: var(--ink-2); }
+.notice a { color: inherit; font-weight: 700; }

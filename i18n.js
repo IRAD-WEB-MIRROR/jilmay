@@ -8,6 +8,7 @@ window.JL_I18N = {
   htmlLang: { en: "en", ir: "ky", ru: "ru" },
 
   en: {
+    nJobs: "⚡ Quick apply: send your application to any job without an account. Find out within a week!",
     docTitle: "Jılmay 😊 Irad's marketplace",
     about: "About Jılmay", rules: "Jılmay Rules", cargo: "📦 Jılmay Cargo", business: "For business", help: "Help centre",
     fx: "💵 $1 = 8.40 som", fxTitle: "Official rate of the Bank of Irad",
@@ -90,6 +91,7 @@ window.JL_I18N = {
   },
 
   ir: {
+    nJobs: "⚡ Tez arız: kaalagan jumushka kattoosuz arız jönötüñüz. Bir jumanın ichinde bilesiz!",
     docTitle: "Jılmay 😊 Iraddın bazarı",
     about: "Jılmay jönündö", rules: "Jılmay erejeleri", cargo: "📦 Jılmay Kargo", business: "Biznes üchün", help: "Jardam borboru",
     fx: "💵 $1 = 8.40 som", fxTitle: "Irad Bankının rasmiy kursu",
@@ -167,6 +169,7 @@ window.JL_I18N = {
   },
 
   ru: {
+    nJobs: "⚡ Быстрый отклик: откликайтесь на любую вакансию без регистрации. Ответ в течение недели!",
     docTitle: "Jılmay 😊 базар Ирада",
     about: "О Jılmay", rules: "Правила Jılmay", cargo: "📦 Jılmay Карго", business: "Для бизнеса", help: "Справочный центр",
     fx: "💵 $1 = 8,40 сом", fxTitle: "Официальный курс Банка Ирада",
