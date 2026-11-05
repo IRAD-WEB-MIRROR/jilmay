@@ -11,6 +11,7 @@
     opera: { name: "Opera Theatre", url: "https://talas-opera.korkom.org/afisha.html", link: "Talas Opera calendar", e: "🩰", meet: "the Opera Theatre, Theatre Square",
       tiers: [["stalls", 1500, 18], ["box", 1500, 0], ["balcony", 700, 6], ["gallery", 300, 5]] },
     phil: { name: "Philharmonic", url: "https://philharmonic.korkom.org/", link: "Talas Philharmonic season", e: "🎻", meet: "the Philharmonic, Liberty Boulevard" },
+    akkuu: { name: "Philharmonic", url: "https://akkuu.korkom.org/tours.html", link: "Ak-Kuu concert dates", e: "💃", meet: "the Philharmonic, Liberty Boulevard" },
     circus: { name: "Equestrian Circus", url: "https://circus.korkom.org/tickets.html", link: "Equestrian Circus tickets", e: "🎪", meet: "the covered ring, Hippodrome Road",
       tiers: [["adult", 300, 12], ["child", 150, 12]] }
   };
@@ -28,8 +29,8 @@
     ["opera", "2027-01-09", "18:30", "Janyl (ballet)"], ["opera", "2027-01-10", "18:30", "Eugene Onegin"], ["opera", "2027-01-16", "18:30", "Swan Lake"],
     ["opera", "2027-01-17", "18:30", "La Traviata"],
     ["phil", "2026-11-07", "18:00", "The Desert Suites", 0, 300, 900], ["phil", "2026-11-21", "18:00", "Tchaikovsky 5", 0, 300, 900],
-    ["phil", "2026-11-28", "18:00", "Ak-Kuu Folk Dance Ensemble", 0, 200, 600], ["phil", "2026-12-05", "18:00", "Janyl Baatyr evening", 0, 300, 700],
-    ["phil", "2026-12-20", "17:00", "Christmas Oratorio", 0, 300, 900], ["phil", "2026-12-27", "17:00", "Ak-Kuu New Year concert", 0, 200, 600],
+    ["akkuu", "2026-11-28", "18:00", "Ak-Kuu Folk Dance Ensemble", 0, 200, 600], ["phil", "2026-12-05", "18:00", "Janyl Baatyr evening", 0, 300, 700],
+    ["phil", "2026-12-20", "17:00", "Christmas Oratorio", 0, 300, 900], ["akkuu", "2026-12-27", "17:00", "Ak-Kuu New Year concert", 0, 200, 600],
     ["phil", "2026-12-31", "21:00", "New Year's Eve Gala", 0, 1500, 3000], ["phil", "2027-01-16", "18:00", "Shostakovich 7", 0, 300, 900],
     ["phil", "2027-02-06", "18:00", "Young Soloists", 0, 200, 600],
     ["circus", "2026-12-28", "17:00", "New Year show"], ["circus", "2026-12-29", "17:00", "New Year show"], ["circus", "2026-12-30", "13:00", "New Year show", 1]
