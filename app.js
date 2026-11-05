@@ -187,6 +187,7 @@
         '<div class="title">' + esc(l.t) + "</div>" +
         '<div class="desc">' + esc(l.d) + "</div>" +
         '<div class="where-line">📍 ' + esc(cityName(l.city)) + " · " + when(l.m) + "</div>" +
+        (l.u ? '<a class="card-link" href="' + esc(l.u) + '" target="_blank" rel="noopener">🔗 ' + esc(l.un || l.u) + "</a>" : "") +
         '<div class="meta"><span class="ava" style="background:' + avaColor(l.s) + '">' + esc(initials(l.s)) + "</span>" +
           '<span class="seller">' + esc(l.s) + "</span>" + (l.pro ? '<span class="pro">PRO</span>' : "") +
         "</div>" +
@@ -461,6 +462,7 @@
 
   /* Everything that needs an account opens the loop */
   document.addEventListener("click", function (e) {
+    if (e.target.closest(".card-link")) return;
     var cardEl = e.target.closest(".card");
     if (cardEl) { openLogin(e.target.closest("[data-fav]") ? "fav" : "item"); return; }
     var t = e.target.closest("[data-login]");
