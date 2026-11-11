@@ -115,7 +115,7 @@ window.JL_I18N = {
     cGetAddr: "🏷️ Bishkektegi daregimdi aluu", cCalcLink: "Jetkirüünü eseptöö ↓", cHow: "Kantip ishteyt",
     cS1h: "Darek aluu", cS1p: "Jılmayga kiriñiz jana jeke kodu menen (JL-xxxxx) Bishkektegi kampa dareginizdi alıñız.",
     cS2h: "Onlayn sooda", cS2p: "Kırgızstanga jetkirgen kaalagan düköndön buyurtma beriñiz. Jılmay kodun darektin ekinchi sabına jazıñız.",
-    cS3h: "Tekshirip, tañgagıbız", cS3p: "Bishkektegi komandabız posılkanı tartat, süröttön tartat jana bajı kagazdarın dayardayt.",
+    cS3h: "Teksherip, tañgagıbız", cS3p: "Bishkektegi komandabız posılkanı tartat, süröttön tartat jana bajı kagazdarın dayardayt.",
     cS4h: "Iradga jetkirüü", cS4p: "Trans-Chuy Freight & Logistics kompaniyasının bajı mashinaları 5–9 kündö shaarıñızga alıp kelet.",
     cRates: "Tarifter", cDest: "Bagıt", cPerKg: "1 kg", cTime: "Möönöt",
     cZ1: "🏙️ Talas, Nurzhan, Iyık Janyl", cZ2: "🏘️ Kara-Buura, Chu, Sary-Bulak, Tömönkü Narın, Toktogul rayondoru", cZ3: "⛰️ Avtonomduu uruu aymaktarı",
@@ -138,7 +138,7 @@ window.JL_I18N = {
     aEmail: "Email", aSend: "Shilteme jiberüü", aBack: "Kirüügö kaytuu", aCreate: "Akkaunt tüzüü", aName: "Atı-jönü", aPassPh: "Keminde 8 belgi",
     rItem: "Jarnamanı körüü jana satuuchu menen baylanıshuu üchün kiriñiz.", rFav: "Jarnamalardı tandalmalarga saktoo üchün kiriñiz.", rPost: "Jarnama berüü üchün kiriñiz. Bul beker!",
     rCargo: "Bishkektegi jeke dareginizdi aluu üchün kiriñiz.", rGeneral: "Kosh kelipsiz! Ulantuu üchün kiriñiz.",
-    mFill: "Telefonuñuzdu je emailiñizdi jana sırsözüñüzdü jazıñız.", mChecking: "Tekshirilip jatat…", mWrong: "Sırsöz tuura emes. Kayra araket kılıñız je sırsözdü kalıbına keltiriñiz.",
+    mFill: "Telefonuñuzdu je emailiñizdi jana sırsözüñüzdü jazıñız.", mChecking: "Teksherilip jatat…", mWrong: "Sırsöz tuura emes. Kayra araket kılıñız je sırsözdü kalıbına keltiriñiz.",
     mEmail: "Email dareginizdi jazıñız.", mSending: "Jiberilip jatat…", mInvalid: "Bul email darek jaraksız.",
     mAll: "Bardık talaalardı tolturuñuz.", mCreating: "Akkaunt tüzülüp jatat…", mExists: "Bul telefon je email menen akkaunt buga cheyin bar. Kiriñiz.",
 
